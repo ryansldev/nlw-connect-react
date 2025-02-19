@@ -1,11 +1,11 @@
-import { Mail } from "lucide-react";
-import type { ComponentProps } from "react";
+import { Mail } from 'lucide-react'
+import type { ComponentProps } from 'react'
 
-interface InputProps extends ComponentProps<"input"> {
-  error?: boolean;
+interface InputProps extends ComponentProps<'input'> {
+  error?: boolean
 }
 
-interface InputRootProps extends ComponentProps<"input"> {
+interface InputRootProps extends ComponentProps<'input'> {
   error?: boolean
 }
 
@@ -19,7 +19,7 @@ export function InputRoot({ error, ...props }: InputRootProps) {
   )
 }
 
-interface InputIconProps extends ComponentProps<"span"> {}
+interface InputIconProps extends ComponentProps<'span'> {}
 
 export function InputIcon(props: InputIconProps) {
   return (
@@ -30,13 +30,8 @@ export function InputIcon(props: InputIconProps) {
   )
 }
 
-interface InputFieldProps extends ComponentProps<"input"> {}
+interface InputFieldProps extends ComponentProps<'input'> {}
 
 export function InputField(props: InputFieldProps) {
-  return (
-    <input
-      className="flex-1 outline-0 placeholder-gray-400"
-      {...props}
-    />
-  )
+  return <input className="flex-1 outline-0 placeholder-gray-400" {...props} />
 }
